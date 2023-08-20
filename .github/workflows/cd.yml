@@ -1,0 +1,11 @@
+name: CD
+
+on:
+  workflow_dispatch:
+
+jobs:
+  node-build-publish:
+    uses: nunnam/infrastructure/.github/workflows/cd.yml@main
+    with: 
+      nodejs-version: "18.x"
+      sls-deploy: true
