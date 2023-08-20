@@ -9,6 +9,5 @@ jobs:
     with: 
       nodejs-version: 18.x
       unittest-npm-cmd: "test"
-      runner-label: "self-hosted"
       
       
