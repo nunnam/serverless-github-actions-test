@@ -10,5 +10,5 @@ export const hello = async (event, context) => {
 const message = ({ time, ...rest }) => new Promise((resolve, reject) =>
   setTimeout(() => {
     resolve(`${rest.copy} (with a delay)`);
-  }, time * 1000)
+  }, time * 1000) 
 );
