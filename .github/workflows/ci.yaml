@@ -13,7 +13,7 @@ jobs:
         run: echo Hello, world!
 
   docker:
-    uses: nunnam/infrastructure/.github/workflows/serverless-ci-cd.yaml@main
+    uses: nunnam/infrastructure/.github/workflows/ci.yml@main
     with: 
       nodejs-version: "18.x"
       unittest-npm-cmd: "test"
