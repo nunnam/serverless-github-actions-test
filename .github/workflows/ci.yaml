@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  node-build-publish:
+    uses: clearchannelinternational/direct-infrastructure/.github/workflows/nodejs-build-push.yml@master
+    with: 
+      nodejs-version: 18.x
+      unittest-npm-cmd: "test"
+      runner-label: "self-hosted"
+      
+      
