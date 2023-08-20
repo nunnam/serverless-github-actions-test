@@ -5,9 +5,15 @@ on:
 
 jobs:
   node-build-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+  docker:
     uses: nunnam/infrastructure/.github/workflows/serverless-ci-cd.yaml@main
     with: 
       nodejs-version: "18.x"
       unittest-npm-cmd: "test"
-      
-      
