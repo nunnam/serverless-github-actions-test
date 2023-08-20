@@ -1,8 +1,7 @@
-name: CI
-
+name: CI  
 on:
-  workflow_dispatch:
-
+  push:
+    branches: [ main ]
 jobs:
   node-build-publish:
     uses: nunnam/infrastructure/.github/workflows/ci.yml@main
