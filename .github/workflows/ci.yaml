@@ -5,9 +5,9 @@ on:
 
 jobs:
   node-build-publish:
-    uses: nunnam/infrastructure/.github/workflows/serverless-ci-cd.yaml
+    uses: nunnam/infrastructure/.github/workflows/serverless-ci-cd.yaml@main
     with: 
-      nodejs-version: 18.x
+      nodejs-version: "18.x"
       unittest-npm-cmd: "test"
       
       
