@@ -5,7 +5,7 @@ on:
 
 jobs:
   node-build-publish:
-    uses: clearchannelinternational/direct-infrastructure/.github/workflows/nodejs-build-push.yml@master
+    uses: nunnam/infrastructure/.github/workflows/serverless-ci-cd.yaml@main
     with: 
       nodejs-version: 18.x
       unittest-npm-cmd: "test"
